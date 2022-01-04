@@ -75,7 +75,7 @@ function InitializeSession2(protocol, bankCode, step, credentials, interactive)
 
         LocalStorage["token"] = JSON(result):dictionary()["access_token"]
 
-        print("obtained token" .. token)
+        print("obtained token" .. LocalStorage["token"])
 
         if LocalStorage["token"] == nil then
             return LoginFailed
